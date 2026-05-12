@@ -2,20 +2,12 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route("/")
 def home():
-    return render_template('index.html')
 
-@app.route('/mensagem')
-def mensagem():
-    return """
-    <h1>Comunicação funcionando!</h1>
+    mensagem = "Comunicação entre HTML e Python funcionando com Flask!"
 
-    <p>
-        O HTML enviou uma requisição e o Python respondeu corretamente usando Flask.
-    </p>
+    return render_template("index.html", mensagem=mensagem)
 
-    <a href="/">Voltar</a>
-    """
-
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
