@@ -1,6 +1,6 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right, #4facfe, #00f2fe);
+    background: linear-gradient(135deg, #f7e8ff, #e6ccff);
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -8,42 +8,49 @@ body{
 .container{
     width: 80%;
     margin: auto;
-    margin-top: 30px;
-    background-color: white;
+    background-color: #ffffff;
     padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(128, 0, 128, 0.2);
+    border: 3px solid #d9a3ff;
 }
 
 h1{
     text-align: center;
-    color: #003366;
+    color: #7b2cbf;
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 h2{
-    color: #00509d;
-    margin-top: 30px;
+    color: #9d4edd;
+    border-left: 5px solid #c77dff;
+    padding-left: 10px;
+    margin-top: 25px;
 }
 
-p{
+p, li{
     font-size: 18px;
+    color: #4b4453;
     line-height: 1.6;
 }
 
 ul{
-    font-size: 18px;
+    padding-left: 25px;
 }
 
-button{
-    background-color: #00509d;
+li{
+    margin-bottom: 8px;
+}
+
+.mensagem{
+    background: linear-gradient(135deg, #d8b4fe, #c084fc);
+    padding: 15px;
+    border-radius: 12px;
+    font-weight: bold;
     color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover{
-    background-color: #003f7d;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0px 3px 10px rgba(128, 0, 128, 0.3);
 }
